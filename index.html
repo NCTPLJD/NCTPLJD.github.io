@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obramowanie w CSS</title>
+    <style>
+        p {
+            color: white;
+            font-family: Verdana, sans-serif;
+            font-size: medium;
+            background-color: green;
+            border: 10px double black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Obramowanie w CSS</h1>
+
+    <p>Akapit formatowany w stylach zewnętrznych</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cecha</th>
+                <th>Opis</th>
+                <th>Możliwe wartości</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>border-color, border-top-color, border-left-color, border-right-color, border-bottom-color</td>
+                <td>Deklaracja koloru wszystkich krawędzi lub wybranej krawędzi (górna, lewa, prawa, dolna)</td>
+                <td>Nazwa koloru RGB lub zapis szesnastkowy (domyślnie przezroczyste)</td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td>Deklaracja stylu wszystkich krawędzi lub wybranej krawędzi (górna, lewa, prawa, dolna)</td>
+                <td>none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset</td>
+            </tr>
+            <tr>
+                <td>border-width</td>
+                <td>Deklaracja grubości wszystkich krawędzi lub wybranej krawędzi (górna, lewa, prawa, dolna)</td>
+                <td>Grubość określona w pikselach lub wartość predefiniowana: thin, medium, thick</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Skrócona forma deklarowania wszystkich właściwości obramowania w jednym miejscu lub wybranej krawędzi (górna, lewa, prawa, dolna)</td>
+                <td>Oddzielone spacjami wartości w następującej kolejności: width, style, color</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
